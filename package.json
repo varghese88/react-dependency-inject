@@ -1,0 +1,42 @@
+{
+  "name": "react-dependency-inject",
+  "version": "1.0.0",
+  "description": "Dependency injection in react using HOC",
+  "keywords": [],
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "precommit": "echo 'Running pre-commit hooks...' && npm run test",
+    "prebuild": "npm run test",
+    "build": "npm run build-commonjs & npm run build-umd & npm run build-umd-min",
+    "build-commonjs": "babel index.js -d dist",
+    "build-umd": "webpack dist/umd/react-dependency-inject.js",
+    "build-umd-min": "set NODE_ENV=production webpack dist/umd/react-dependency-inject.min.js"
+  },
+  "dependencies": {
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varghese88/react-dependency-inject.git"
+  },
+  "author": "Varghese John",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varghese88/react-dependency-inject/issues"
+  },
+  "homepage": "https://github.com/varghese88/react-dependency-inject#readme"
+}
