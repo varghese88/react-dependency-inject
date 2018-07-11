@@ -2,7 +2,14 @@
   "name": "react-dependency-inject",
   "version": "1.0.0",
   "description": "Dependency injection in react using HOC",
-  "keywords": [],
+  "keywords": [
+    "react",
+    "dependency",
+    "inject",
+    "injection",
+    "dependency injection",
+    "HOC"
+  ],
   "main": "./dist/index.js",
   "scripts": {
     "prepare": "npm run build",
